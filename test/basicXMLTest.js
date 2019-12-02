@@ -31,7 +31,7 @@ describe('api-builder-plugin-fn-xml-node', () => {
 		});
 	});
 
-	describe('#xml2json', () => {
+	describe('#xml2json Tests', () => {
 		it('Should fail to with invalid argument', () => {
 			return mocknode(flownodes).node('xml-node').invoke('xml2json', { xmlData: undefined })
 				.then((data) => {

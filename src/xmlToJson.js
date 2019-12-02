@@ -20,13 +20,15 @@ exports = module.exports = function (req, cb) {
 	    } else {
 	      parentElement._parent[keyName] = value;
 	    }
-	  } catch (e) {}
+	  } catch (e) {
+			console.log(e);
+		}
 	};
 
 	var options = {
     compact: true,
     trim: true,
-    nativeType: true,
+    nativeType: false,
     ignoreDeclaration: true,
     ignoreInstruction: true,
     ignoreAttributes: true,
