@@ -1,10 +1,13 @@
 # API-Builder XML-Flow node
 
-This flow node allows you to convert an XML-String into a Java-Script Object or a JSON-String. 
+Use this extension to add an XML-Flow node to your API-Builder project. With that you can convert XML-Payload you may have received from a backend stream into Javascript Object for further processing or directly into a JSON-String. That allows you to easily merge data from different sources and formats into a JSON-Based-REST-API. 
 
-## Supported methods: XML to JSON
+## Convert XML to JSON
 
-Documentation is ToDo.
+
+## Convert JSON to XML
+> This is not yet supported!
+
 
 ## Install
 
