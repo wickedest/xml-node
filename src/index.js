@@ -7,9 +7,9 @@ function getFlowNodes() {
 	// The unique name of your flow-node.  You can define multiple flow-nodes in this
 	// file, but one is typical.
 	flownodes.add('xml-node', {
-		name: 'XML Flow Node',
+		name: 'XML',
 		// file support for: svg, png, gif, bmp, jpg, and tiff
-		icon: 'icon.svg',
+		icon: 'xml-node-icon.png',
 		description: 'Provides support to handle XML-Payload'
 	})
 		// Add a method to your flow-node.
