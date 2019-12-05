@@ -19,4 +19,4 @@ After creating your API Builder service (`api-builder init`), you can install th
 npm install --no-optional @axway-api-builder-ext/api-builder-plugin-fn-xml-node
 ```
 After installation start the API-Builder project and you get the following node:
-![XML Node](https://github.com/Axway-API-Builder-Ext/xml-node/blob/master/misc/images/xml-flow-node-settings.png)
+![XML Node](https://github.com/Axway-API-Builder-Ext/xml-node/blob/master/misc/images/xml-flow-node.png)
