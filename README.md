@@ -1,6 +1,7 @@
 # API-Builder XML-Flow node
 
-Use this extension to add an XML-Flow node to your API-Builder project. With that you can convert XML-Payload you may have received from a backend stream into Javascript Object for further processing or directly into a JSON-String. That allows you to easily merge data from different sources and formats into a JSON-Based-REST-API. 
+Use this extension to add an XML-Flow node to your API-Builder project. With that you can convert XML-Payload you may have received from a backend stream (e.g. a SOAP-Service) into a Javascript Object for further processing or directly into a JSON-String. That allows you to easily merge data from different sources and formats into a JSON-Based-REST-API.  
+The Flow-Node is based on the [XML-JS](https://www.npmjs.com/package/xml-js) Library.
 
 ## Convert XML to JSON
 After have installed the XML-Node into your API-Builder project, Drag & Drop the XML-Node into your flow and select the method: XML to JSON. You get the following configuration options:  
