@@ -19,11 +19,11 @@ function getFlowNodes() {
 		})
 		// Add parameter(s) to your method.
 		.parameter('xmlData', {
-			description: 'XML-Data to be converted',
+			description: 'XML data to be converted',
 			type: 'string'
 		}, true)
 		.parameter('asString', {
-			description: 'Convert XML into a String, otherwise it will becomes a JS-Object',
+			description: 'Encode the JSON response as a String',
 			type: 'boolean'
 		}, false)
 		// Once all parameters for the method are defined, add output(s) to your method.
@@ -32,7 +32,10 @@ function getFlowNodes() {
 			description: 'JSON data created',
 			context: '$.jsonData',
 			schema: {
-				type: 'string'
+				oneOf: [
+					{ type: 'boolean' },
+					{ type: 'object' }
+				]
 			}
 		})
 		// Provide the actual javascript implementation.

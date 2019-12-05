@@ -3,7 +3,7 @@ const action = require('../src/xmlToJson');
 const expect = require('chai').expect;
 const { mocknode, validate } = require('axway-flow-sdk');
 
-var xml =
+const xml =
 '<?xml version="1.0" encoding="utf-8"?>' +
 '<note importance="high" logged="true">' +
 '	<title>Happy</title>' +
@@ -33,27 +33,39 @@ describe('api-builder-plugin-fn-xml-node', () => {
 
 	describe('#xml2json Tests', () => {
 		it('Should fail to with invalid argument', () => {
-			return mocknode(flownodes).node('xml-node').invoke('xml2json', { xmlData: undefined })
+			return mocknode(flownodes).node('xml-node')
+				.invoke('xml2json', { xmlData: undefined })
 				.then((data) => {
 					expect(data).to.deep.equal([ 'invalid argument' ]);
 				});
 		});
 
-		it('Test convert into an JS Object', () => {
-			return mocknode(flownodes).node('xml-node').invoke('xml2json', { xmlData: xml, 'asString': false })
+		it('Should convert into an JS Object', () => {
+			return mocknode(flownodes).node('xml-node')
+				.invoke('xml2json', { xmlData: xml, 'asString': false })
 				.then((data) => {
-					var result = data.next[1];
-					expect(typeof result).to.equal('object');
-					expect(result).to.deep.equal({"note":{"title":"Happy","todo":["Work","Play"]}});
+					const result = data.next[1];
+					expect(result).to.be.an('object');
+					expect(result).to.deep.equal({
+						note: {
+							title: 'Happy',
+							todo: [
+								'Work',
+								'Play'
+							]
+						}
+					});
 				});
 		});
 
-		it('Test convert into an JSON String', () => {
-			return mocknode(flownodes).node('xml-node').invoke('xml2json', { xmlData: xml, 'asString': true })
+		it('Should convert into an JSON String', () => {
+			return mocknode(flownodes).node('xml-node')
+				.invoke('xml2json', { xmlData: xml, 'asString': true })
 				.then((data) => {
-					var result = data.next[1];
-					expect(typeof result).to.equal('string');
-					expect(result).to.deep.equal('{"note":{"title":"Happy","todo":["Work","Play"]}}');
+					const result = data.next[1];
+					expect(result).to.be.a('string');
+					expect(result)
+						.to.deep.equal('{"note":{"title":"Happy","todo":["Work","Play"]}}');
 				});
 		});
 	});
