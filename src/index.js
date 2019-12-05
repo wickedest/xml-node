@@ -33,7 +33,7 @@ function getFlowNodes() {
 			context: '$.jsonData',
 			schema: {
 				oneOf: [
-					{ type: 'boolean' },
+					{ type: 'string' },
 					{ type: 'object' }
 				]
 			}
