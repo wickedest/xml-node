@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Tell us what you need to improve this API-Builder asset
+about: Tell us what you need to improve this API-Builder artefact
 title: "[Feature]"
 labels: enhancement
 

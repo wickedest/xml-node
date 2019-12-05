@@ -1,12 +1,12 @@
 ---
 name: Question
-about: You need help with this asset, please let us know
+about: You need help with this artefact, please let us know
 title: "[Help]"
 labels: help wanted
 
 ---
 
-**Asset version**
+**Artefact version**
 
 
 **API-Builder version**
