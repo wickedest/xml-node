@@ -4,7 +4,7 @@ Use this extension to add an XML-Flow node to your API-Builder project. With tha
 
 ## Convert XML to JSON
 After have installed the XML-Node into your API-Builder project, Drag & Drop the XML-Node into your flow and select the method: XML to JSON. You get the following configuration options:  
-![XML Node Settings](https://github.com/Axway-API-Builder-Ext/xml-node/blob/master/misc/images/xml-flow-node-settings.png)
+![XML Node Settings](https://github.com/Axway-API-Builder-Ext/xml-node/blob/master/misc/images/xml-flow-node-settings.png)  
 Provide the XML data should be converted into JSON using either a Selector or a plain XML-String.
 Secondly you can decide if you would like to have a Javascript Object or the JSON-Payload as String.
 
