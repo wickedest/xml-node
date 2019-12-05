@@ -19,10 +19,12 @@ function getFlowNodes() {
 		})
 		// Add parameter(s) to your method.
 		.parameter('xmlData', {
+			title: 'XML Data',
 			description: 'XML data to be converted',
 			type: 'string'
 		}, true)
 		.parameter('asString', {
+			title: 'As String',
 			description: 'Encode the JSON response as a String',
 			type: 'boolean'
 		}, false)
