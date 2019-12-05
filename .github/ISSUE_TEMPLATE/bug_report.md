@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve this API-Builder asset
+about: Create a report to help us improving this API-Builder asset
 title: "[BUG]"
 labels: bug
 
