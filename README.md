@@ -20,3 +20,25 @@ npm install --no-optional @axway-api-builder-ext/api-builder-plugin-fn-xml-node
 ```
 After installation start the API-Builder project and you get the following node:  
 ![XML Node](https://github.com/Axway-API-Builder-Ext/xml-node/blob/master/misc/images/xml-flow-node.png)
+
+## Changelog
+- 1.0.0 - 05.12.2019
+  - Initial version supporting XML to JSON
+  
+## Limitations/Caveats
+- JSON to XML not yet supported
+
+## Contributing
+
+Please read [Contributing.md](https://github.com/Axway-API-Management-Plus/Common/blob/master/Contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.  
+
+
+## Team
+
+![alt text][Axwaylogo] Axway Team
+
+[Axwaylogo]: https://github.com/Axway-API-Management/Common/blob/master/img/AxwayLogoSmall.png  "Axway logo"
+
+
+## License
+[Apache License 2.0](/LICENSE)
